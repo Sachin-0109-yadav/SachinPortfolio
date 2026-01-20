@@ -1,0 +1,190 @@
+/* ================================
+   GLOBAL SECTION STYLING
+================================ */
+section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+#hero {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("/images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+#about {
+  background-image:
+    linear-gradient(rgba(15,23,42,0.9), rgba(15,23,42,0.9)),
+    url("/images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ================================
+   SKILLS SECTION
+================================ */
+#skills {
+  background-image:
+    linear-gradient(rgba(2,6,23,0.9), rgba(2,6,23,0.9)),
+    url("/images/skills-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ================================
+   CONTAINER
+================================ */
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+/* ================================
+   HERO LAYOUT
+================================ */
+.hero {
+  width: 100%;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ================================
+   HERO IMAGE
+================================ */
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.45);
+  animation: float 4s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* ================================
+   HERO TEXT
+================================ */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cbd5f5;
+}
+
+/* ================================
+   SOCIAL ICONS
+================================ */
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  margin-right: 18px;
+  font-size: 1.6rem;
+  color: #38bdf8;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-4px);
+  color: #60a5fa;
+}
+
+/* ================================
+   SKILLS BAR
+================================ */
+.skill {
+  margin-bottom: 18px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.skill-bar {
+  height: 10px;
+  background: rgba(255,255,255,0.18);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+}
+
+/* ================================
+   CARD DESIGN
+================================ */
+.card {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 16px;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .socials a {
+    margin: 0 12px;
+  }
+}
+#hero {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("/images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
